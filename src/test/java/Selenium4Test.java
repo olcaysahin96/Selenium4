@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 public class Selenium4Test extends BaseTest{
 
     @Test(description = "Screenshot spesific element", priority = 1)
