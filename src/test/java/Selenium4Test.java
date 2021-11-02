@@ -21,7 +21,7 @@ public class Selenium4Test extends BaseTest{
     public void newTabAndWindow() {
         driver.switchTo().newWindow(WindowType.TAB);
         driver.get("https://www.google.com/");
-
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.switchTo().newWindow(WindowType.WINDOW);
         driver.get("https://www.n11.com/");
     }
